@@ -21,7 +21,6 @@ public class FTPupload_download {
 		this.port=port;
 		this.username=username;
 		this.password=password;
-		//making the connection
 		ftpclient = new FTPClient();
 		ftpclient.connect(this.server,this.port);
 		if(ftpclient.login(this.username, this.password)==false)
@@ -44,7 +43,6 @@ public class FTPupload_download {
 		return result;
 	}
 	public String[] listserverfiles() throws IOException{
-		//System.out.println(ftpclient.listNames());
 		FTPFile[] f= ftpclient.listFiles();
 		String[] result = new String[f.length];
 		for(int  i = 0; i < f.length; ++i)
