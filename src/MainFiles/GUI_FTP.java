@@ -23,6 +23,7 @@ import org.apache.commons.net.ftp.FTPFile;
 
 public class GUI_FTP extends JFrame {
 
+//some random comments
 	public static void main(String[] args) {
 		new GUI_FTP();
 	}
